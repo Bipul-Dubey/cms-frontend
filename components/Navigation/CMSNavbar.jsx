@@ -10,7 +10,6 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import SearchAppBar from "../common/SearchBox";
 import { List } from "@phosphor-icons/react";
 import { useRouter } from "next/router";
 import { PATHS } from "@/constants/paths";
@@ -121,7 +120,6 @@ function CmsNavbar({}) {
             ))}
           </Box>
           <Box display={"flex"} gap={2} alignItems={"center"}>
-            <SearchAppBar />
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
               <IconButton
                 size="large"

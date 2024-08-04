@@ -52,6 +52,24 @@ function BlogNavbar({}) {
         router.push(PATHS.BLOG_HOME);
       },
     },
+    {
+      button_name: "Write Blog",
+      function: () => {
+        router.push(PATHS.BLOG_WRITE);
+      },
+    },
+    {
+      button_name: "About",
+      function: () => {
+        router.push(PATHS.BLOG_ABOUT);
+      },
+    },
+    {
+      button_name: "Contact Us",
+      function: () => {
+        router.push(PATHS.BLOG_CONTACT);
+      },
+    },
   ];
 
   return (
