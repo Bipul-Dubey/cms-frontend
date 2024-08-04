@@ -58,6 +58,12 @@ function CmsNavbar({}) {
         router.push(PATHS.CRM_ABOUT);
       },
     },
+    {
+      button_name: "Contact Us",
+      function: () => {
+        router.push(PATHS.CRM_CONTACT_US);
+      },
+    },
   ];
 
   return (

@@ -2,6 +2,7 @@ import { FEATURES } from "@/constants/dummyData";
 import { Box, Card, Typography } from "@mui/material";
 import React from "react";
 import { useTheme } from "styled-components";
+import DescriptionCard from "../common/DescriptionCard";
 
 function Features({}) {
   const theme = useTheme();
@@ -34,12 +35,11 @@ function Features({}) {
         }}
       >
         {FEATURES?.map((feature) => (
-          <Card sx={{ width: "485px", height: "100px", padding: 2 }}>
-            <Typography variant="h6" fontSize={"1.07rem"} fontWeight={600}>
-              {feature.featureName}
-            </Typography>
-            <Typography>{feature.description}</Typography>
-          </Card>
+          <DescriptionCard
+            description={feature.description}
+            title={feature.featureName}
+            width={"485px"}
+          />
         ))}
       </Box>
     </Box>
