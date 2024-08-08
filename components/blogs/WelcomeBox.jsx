@@ -1,7 +1,10 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 
-function WelcomeBox() {
+function WelcomeBox({
+  heading = "Welcome to Blogs",
+  subheading = "Discover, Read and Share Blogs on Interesting Topics",
+}) {
   return (
     <Box
       sx={{
@@ -17,10 +20,8 @@ function WelcomeBox() {
         color: "#fff",
       }}
     >
-      <Typography variant="h2">Welcome to Blogs</Typography>
-      <Typography variant="h6">
-        Discover, Read and Share Blogs on Interesting Topics
-      </Typography>
+      <Typography variant="h2">{heading}</Typography>
+      <Typography variant="h6">{subheading}</Typography>
     </Box>
   );
 }
